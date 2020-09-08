@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style type="text/css">
+        @import url(https://db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
+        @import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+        @import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+
+        div,
+        footer {
+            padding: 20px 50px;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            border-bottom: 2px solid #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-container {
+            padding: 0 !important;
+        }
+
+        .logo {
+            max-width: 100%;
+        }
+
+        .hello-msg {
+            text-align: center;
+        }
+
+        .name {
+            margin-bottom: 0;
+            font-family: "Circular Std Medium";
+            color: #003580;
+        }
+
+        .note {
+            margin-bottom: 0;
+            color: #0144a2;
+            font-family: "Circular Std Medium";
+            font-weight: 400;
+            margin-top: auto;
+        }
+
+        .track {
+            padding: 15px 30px;
+            font-size: 17px;
+            margin: 10px auto 20px;
+            background: #00b2eb;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-family: "Circular Std book";
+        }
+
+        .track:focus {
+            border: none;
+            outline: none;
+        }
+
+        .features {
+            background: #e6f6fc;
+            font-family: "Circular Std Book";
+        }
+
+        .features h2 {
+            color: #211e71;
+            text-align: center;
+            font-family: "Circular Std Bold";
+        }
+
+        .fet {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: "Circular Std Medium";
+        }
+
+        .fet li::before {
+            content: "";
+            position: absolute;
+            background-image: url(media/right.png);
+            background-repeat: no-repeat;
+            background-size: 25px;
+            left: 0;
+            width: 25px;
+            height: 25px;
+        }
+
+        .fet li {
+            padding: 3px 30px;
+            margin: 15px 0;
+            position: relative;
+        }
+
+        .blued {
+            color: #00b2eb
+        }
+
+        .notify {
+            background: #fff;
+            font-family: "Circular Std Book";
+            text-align: center;
+        }
+
+        .bell img {
+            max-width: 100%;
+        }
+
+        .notify-txt {
+            font-size: 17px;
+            color: #4b4b4b;
+        }
+
+        .notify-h {
+            color: #211e71
+        }
+
+        .home-video {
+            max-width: 530px;
+            margin: 0 auto;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+        }
+
+        .home-video video {
+            max-width: 100%;
+        }
+
+        footer {
+            background: #e6f6fc;
+            font-family: "Circular Std Medium";
+            text-align: center;
+        }
+
+        .footer-txt {
+            font-weight: 400;
+            color: #00b2eb;
+        }
+    </style>
+    <style>
+        @media (max-width:768px) {
+
+            div,
+            footer {
+                padding: 20px 15px;
+            }
+
+            .fet li::before {
+                width: 30px !important;
+                height: 30px !important;
+                background-size: 30px !important;
+            }
+
+            .fet li {
+                padding: 6px 35px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <img src="media/logo.png" class="logo">
+        </header>
+        <div class="hello-msg">
+            <h1 class="name">
+                Your Top Doc TV Has Been Shipped!
+            </h1>
+            <h2 class="note">
+                Dear Dr. <last name>
+            </h2>
+            <p style="font-family: Circular Std Book; margin-top: 0; color: #4b4b4b;">
+                Great news! Your Top DOC TV Box is on Its Way! You can track your order by clicking on the button below.
+            </p>
+            <button class="track">
+                Track your order
+            </button>
+        </div>
+        <div class="features">
+            <h2>
+                What’s included?
+            </h2>
+            <ul class="fet">
+                <li>
+                    <strong>30 minutes of customized-commercial quality content:</strong> All about you, your services
+                    and about your practice.
+                </li>
+                <li>
+                    <strong>Google Android Box:</strong> In order to play your content we have sent you a small handheld
+                    Google Android Box that plugs into your TV’s HDMI port.
+                </li>
+                <li>
+                    <strong>Instructions:</strong> Set up is easy(takes 3 minutes).<span class="blued"> Here is a link
+                        to the instructions</span> which are also included in your package.
+                </li>
+            </ul>
+        </div>
+        <div class="notify">
+            <div class="bell">
+                <img src="media/notification.png" alt="bell-img">
+            </div>
+            <p class="notify-txt">
+                We will notify you once your package arrives and will be here to walk you through it if you need any
+                assistance.
+            </p>
+            <h2 class="notify-h">
+                Here is a Video Explaining How
+                Top Doc TV Works
+            </h2>
+            <div class="home-video">
+                <img src="media/Capture.PNG" alt="video poster" id="home-img"
+                    style="max-width: 100%; position: absolute; z-index: 1;">
+                <video src="https://www.findatopdoc.com/fatd/wrtv/media/Final_2.mp4" controls id="home-VideoT">
+                </video>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <img src="media/mail.png" alt="mail">
+                <h2 class="footer-txt">
+                    If you have any questions, I’m here to help, just hit reply.
+                </h2>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let hImg = document.getElementById("home-img"),
+            hVid = document.getElementById("home-VideoT");
+
+        hImg.onclick = function () {
+            hImg.style.display = "none";
+            hVid.play();
+        }
+    </script>
+</body>
+
+</html>
